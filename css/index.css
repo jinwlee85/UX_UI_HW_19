@@ -1,0 +1,168 @@
+/* My Skills Css */
+
+.flexItem {
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+  }
+  .flexContainer {
+    display: flex;
+    height: 600px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+ 
+  .alignItems {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+  h3 {
+      font-size: x-large;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: left;
+  }
+
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: ligher;
+  }
+
+
+/* My Work (Portfolio) CSS */
+
+  .MyWork {
+      font-size: x-large;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: center;
+  }
+
+  #categoryGrid {
+    margin: 0px 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "waymaker waymaker waymakerDisc"
+    "growapp growapp growappDisc"
+    "usda usda usdaDisc";
+  }
+  
+  #waymaker {
+    grid-area: waymaker;
+  }
+  #waymakerDisc {
+      grid-area: waymakerDisc;
+  }
+
+  #growapp {
+    grid-area: growapp;
+  }
+  #growappDisc {
+    grid-area: growappDisc;
+  }
+
+  #usda {
+    grid-area: usda;
+  }
+  #usdaDisc {
+    grid-area: usdaDisc;
+  }
+
+  .categoryGridArea {
+    margin: 20px;
+    display: grid;
+    align-content:center;
+
+  }
+  
+  h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: medium;
+  }
+
+  .button {
+     border: none;
+    
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 60%;
+
+  }
+  .button1 {
+    background-color: black; 
+    color: white; 
+    
+  }
+  .button1:hover {
+    background-color: grey;
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    #categoryGrid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "waymaker waymaker waymakerDisc"
+        "growapp growapp growappDisc"
+        "usda usda usdaDisc";
+      
+    }
+  }
+
+/* My Skills with Tabs JS */
+
+  .MySkills {
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+/* Loading Animation */
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
